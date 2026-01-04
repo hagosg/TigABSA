@@ -28,6 +28,21 @@ python preprocessing/sentencepiece_train.py \
   -- model_prefix spm_tigABSA
   
   python preprocessing/build_multilingual_dataset.py
+
+### TigABSA-800 Native Data
+
+
+| Domain      | Sentences | Avg. Aspects/Sent | Positive | Negative | Neutral | Split (Train/Dev/Test) | Usage     |
+|-------------|-----------|-------------------|----------|----------|---------|------------------------|-----------|
+| Restaurant  | 250       | 3.1               | 46%      | 38%      | 14%     | 187 / 31 / 32          | Dev/Test  |
+| Telecom     | 200       | 2.9               | 32%      | 54%      | 12%     | 150 / 25 / 25          | Dev/Test  |
+| Politics    | 180       | 2.6               | 28%      | 61%      | 9%      | 135 / 23 / 22          | Dev/Test  |
+| Product     | 170       | 2.7               | 41%      | 47%      | 10%     | 128 / 21 / 21          | Dev/Test  |
+| **Total**   | **800**   | **2.84**          | **37%**  | **50%**  | **11%** | **600 / 100 / 100**    | Train/Dev/Test |
+
+*Note:* Only the **Dev + Test** split (200 sentences) is used in zero-resource experiments.  
+Supervised training is performed exclusively on auxiliary cross-lingual corpora.
+
   
 ### Cross-Lingual Data Sources for Build Multilingual Dataset
 The selected three cross-lingual high-resource languages(English, Amharic, and Arabic), chosen for typological or cultural proximity are availiable on the following:
