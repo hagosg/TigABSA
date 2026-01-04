@@ -15,7 +15,7 @@ Key features include:
 
 - Low-Rank Adaptation (LoRA) for efficient fine-tuning
 
-- Balanced evaluation with ATE, ASC, Aspect F1, Percision, Recall, and Acc
+- Balanced evaluation with ATE, ASC, Aspect F1, Percision, Recall, and Accuracy
 
 - Fully reproducible training, evaluation, and analysis pipelines
 
@@ -80,13 +80,12 @@ python training/train_tigabsa.py \
 📊 Evaluation
 
 
-- ROUGE-L
-
-- BERTScore
-
-- Sentiment Preservation Rate (SPR)
-
-- Emotional Consistency Index (ECI)
+- ATE
+- ASC
+- Aspect F1
+- Precision
+- Recall
+- Accuracy
 
 python test_tigABSA.py
 
